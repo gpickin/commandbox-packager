@@ -1,8 +1,8 @@
 {
     "name":"commandbox-packager",
-    "version":"1.1.0",
+    "version":"1.2.0",
     "author":"Gavin Pickin",
-    "location":"gpickin/commandbox-packager#v1.1.0",
+    "location":"gpickin/commandbox-packager#v1.2.0",
     "homepage":"https://github.com/gpickin/commandbox-packager",
     "documentation":"https://github.com/gpickin/commandbox-packager",
     "repository":{
@@ -19,6 +19,6 @@
     "scripts":{
         "postVersion":"package set location='gpickin/commandbox-packager#v`package version`'",
         "onRelease":"publish",
-        "postPublish":"!git push && !git push --tags"
+        "postPublish":"!git push && git push --tags"
     }
 }
