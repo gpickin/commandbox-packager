@@ -1,0 +1,26 @@
+{
+    "name":"commandbox-packager",
+    "version":"1.0.0",
+    "author":"Gavin Pickin",
+    "location":"gpickin/commandbox-packager#v1.0.0",
+    "homepage":"https://github.com/gpickin/commandbox-packager",
+    "documentation":"https://github.com/gpickin/commandbox-packager",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/gpickin/commandbox-packager"
+    },
+    "bugs":"https://github.com/gpickin/commandbox-packager/issues",
+    "slug":"hostnameHeader",
+    "shortDescription":"Allows you to package up your Module for Publishing",
+    "description":"Allows you to package up your Module for Publishing",
+    "type":"modules",
+    "dependencies":{
+    },
+    "installPaths":{
+    },
+    "scripts":{
+        "postVersion":"package set location='gpickin/commandbox-packager#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+}
